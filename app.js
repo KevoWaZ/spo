@@ -81,8 +81,8 @@ function getData(albumType) {
                 data.items.forEach(album => {
                   const htmlToAdd = `
                     <div class="album mr-5">
-                      <h1 class="is-size-4 is-size-2-fullhd">${album.name}</h1>
-                      <p class="is-size-5 is-size-3-fullhd">${album.release_date}</p>
+                      <h1 class="is-size-4">${album.name}</h1>
+                      <p class="is-size-5">${album.release_date}</p>
                       <img src="${album.images[0].url}" alt="${album.name}">
                     </div>
                   `;
