@@ -9,23 +9,43 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="has-background-grey-darker">
 
+
+    <div class="section is-flex is-flex-direction-column is-justify-content-center">
+        <div class="columns is-justify-content-center mt-6">
+            <div class="column is-12">
+                <input id="input" class="input has-text-white is-success is-large is-responsive has-background-grey-dark" type="text" placeholder="Qui souhaitez vous chercher ?">
+            </div>
+        </div>
+
+            <button id="btn" class="button is-large is-responsive is-success is-large mb-3">Chercher</button>
+            <button id="btnTest" class="button is-large is-responsive is-success is-large">TEST</button>
+
+    
+
+    
+    </div>
     <div class="columns is-justify-content-center">
         <div class="column is-12">
-            <input id="input" class="input is-large is-responsive" type="text" placeholder="Entrez l'artiste">
+            <div class="tabs is-medium is-family-primary is-centered">
+                <ul>
+                  <li id="mainTab" class="is-active" data-target="artist"><a class="has-text-success">Artist</a></li>
+                  <li id="albumTab" data-target="album"><a class="has-text-success">Albums</a></li>
+                  <li id="singleTab" data-target="single"><a class="has-text-success">Singles</a></li>
+                </ul>
+              </div>
         </div>
     </div>
-    <div class="">
-        <button id="btn" class="button is-large is-responsive is-danger is-light">ALBUM</button>
-        <button id="btn2" class="button is-large is-responsive is-danger is-light">SINGLE</button>
+    <div id="tab-content">
+        <div id="artist" class=" has-text-white has-background-grey-darker is-flex is-flex-wrap-wrap is-align-items-flex-end is-justify-content-space-evenly is-hidden containers">
+        </div>
+        <div id="album" class=" has-text-white has-background-grey-darker is-flex is-flex-wrap-wrap is-align-items-flex-end is-justify-content-space-evenly is-hidden containers"></div>
+        <div id="single" class="is-flex is-flex-direction-column is-align-items-center has-text-white has-background-grey-darker is-hidden containers"></div>
     </div>
     
-    <div id="la" class="box is-flex is-flex-wrap-wrap is-align-items-flex-end is-justify-content-space-evenly">
-        
-    </div>
 
-
+    <script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async></script>
     <script defer src="app.js"></script>
 </body>
 
