@@ -70,3 +70,10 @@ body {
         height: 100px;
     }   
 }
+
+@media (min-width: 1921px) {
+    iframe {
+        width: 900px;
+        height: 300px;
+    }   
+}
